@@ -1,0 +1,36 @@
+version: 1.0.{build}
+branches:
+  only:
+  - master
+configuration:
+- Debug
+- Release
+platform:
+- x86
+- x64
+assembly_info:
+  patch: true
+  file: '**\AssemblyInfo.*'
+  assembly_version: '{version}'
+  assembly_file_version: '{version}'
+  assembly_informational_version: '{version}'
+build:
+  verbosity: normal
+artifacts:
+- path: AppVeyorDeployTest\bin
+  name: AppVeyorDeployTest
+deploy:
+- provider: GitHub
+  release: AppVeyorDeployTest-v$(appveyor_build_version)
+  auth_token:
+    secure: GdIJP0fRB5j//32G8r7QaCOhfZoqrWh9QCnAasd5lMoFuX7MF6sMxQb2kQi3SVIWcpkAIyYfstiZqlKhRLCUNmzlNb+VkWICJSAc7iLDggg=
+  draft: true
+  on:
+    appveyor_repo_tag: true
+notifications:
+- provider: Email
+  to:
+  - james@devops.v5.me.uk
+  on_build_success: true
+  on_build_failure: true
+  on_build_status_changed: false
