@@ -5,6 +5,15 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppVeyorDeployTest", "AppVeyorDeployTest\AppVeyorDeployTest.csproj", "{8EEA452C-7A0A-4AE6-8AFB-8005057C89F1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppVeyorDeployTestTests", "AppVeyorDeploymentTestTests\AppVeyorDeployTestTests.csproj", "{70FC64A0-8C19-45C9-8C0A-5C55DE64D218}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Misc", "Misc", "{5752C394-5515-43CC-85E9-C8BFF978482F}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +24,10 @@ Global
 		{8EEA452C-7A0A-4AE6-8AFB-8005057C89F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8EEA452C-7A0A-4AE6-8AFB-8005057C89F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8EEA452C-7A0A-4AE6-8AFB-8005057C89F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70FC64A0-8C19-45C9-8C0A-5C55DE64D218}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70FC64A0-8C19-45C9-8C0A-5C55DE64D218}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70FC64A0-8C19-45C9-8C0A-5C55DE64D218}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70FC64A0-8C19-45C9-8C0A-5C55DE64D218}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
